@@ -35,7 +35,7 @@ MAX_PER_GROUP = int(os.getenv("MAX_PER_GROUP", "16"))
 RAND = 42
 GEOCODE_SLEEP_S = float(os.getenv("GEOCODE_SLEEP_S", "0.2"))
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "").strip()
-SHOP_ADDRESS = os.getenv("SHOP_ADDRESS", "414 Hadley street holly michigan 48442").strip()
+SHOP_ADDRESS = os.getenv("SHOP_ADDRESS", "REPLACE THIS WITH CENTRAL LOCATION ADDRESS (EXAMPLE: 1600 amphitheatre parkway mountain view california 94043)").strip()
 
 COL_NAME = "Name"
 COL_ADDRESS = "Address"
