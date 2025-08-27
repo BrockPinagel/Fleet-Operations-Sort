@@ -4,7 +4,7 @@ This project provides a Python program for clustering job sites geographically, 
 
 ## Overview
 
-The script reads jobsite data from an Excel file, geocodes the addresses using the Google Maps API, and then clusters the jobs into groups using the KMeans algorithm. Groups are capped at 16 jobs each. Groups are also renumbered based on their proximity to a central shop address, so Group 0 is the closest, Group 1 is the next closest, and so on.
+The script reads jobsite data from an Excel file, geocodes the addresses using the Google Maps API, and then clusters the jobs into groups using the KMeans algorithm. Groups are capped at 16 jobs each. Groups are also renumbered based on their proximity to a central address, so Group 0 is the closest, Group 1 is the next closest, and so on.
 
 The script provides an interactive interface that allows the user to select the number of groups (K) to generate. After running once, it will continue to prompt the user to run again with a different number of groups until the user cancels.
 
