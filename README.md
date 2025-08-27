@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ## Setup
 
 1. Place your input Excel file (`Jobsite_List.xlsx`) in the working directory. It must contain at least a Name column and an Address column. Latitude and Longitude columns are optional; if absent, they will be filled via geocoding.
-2. Place the script (`JobsiteSortV3.py` or `jobsite_sort_geo_cap16_ui.py`) in the same directory.
+2. Place the script (`JobsiteSortv3.py`) in the same directory.
 3. Create a `.env` file or set environment variables with your Google Maps API key:
 
 ```
@@ -51,15 +51,15 @@ GOOGLE_API_KEY=your_api_key_here
 ```
 
 4. Optionally override other variables in `.env` or environment:
-   - `SHOP_ADDRESS` (default: 414 Hadley street holly michigan 48442)
+   - `SHOP_ADDRESS` 
    - `MAX_PER_GROUP` (default: 16)
 
 ## Running
 
-You can run the program by double-clicking the batch file `run_jobsites_ui.bat` or from the command line:
+You can run the program by double-clicking the batch file `runJobsiteSort.bat` or from the command line:
 
 ```
-python jobsite_sort_geo_cap16_ui.py
+python JobsiteSortv3.py
 ```
 
 When run without arguments, the script will open a dialog to ask for the number of groups (K). After each run, it will ask if you would like to choose a different number. This repeats until you cancel.
@@ -67,7 +67,7 @@ When run without arguments, the script will open a dialog to ask for the number 
 To run once with a fixed K:
 
 ```
-python jobsite_sort_geo_cap16_ui.py --k 38
+python JobsiteSortv3.py --k 38
 ```
 
 ## Outputs
