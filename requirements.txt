@@ -1,0 +1,17 @@
+# Core data & math
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+
+# Clustering (KMeans) and ML utilities
+scikit-learn>=1.3
+
+# Excel support
+openpyxl>=3.1      # .xlsx reader/writer
+xlrd>=2.0          # legacy .xls support (optional but handy)
+
+# Environment variables loader
+python-dotenv>=1.0
+
+# HTTP client for Google Geocoding API
+requests>=2.31
